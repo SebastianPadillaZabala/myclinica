@@ -47,7 +47,7 @@
 			<!-- User info -->
 			<img
 				class="h-12 w-12 rounded-full object-cover"
-				src="https://cdn-icons.flaticon.com/png/512/2321/premium/2321157.png?token=exp=1651495102~hmac=dd64c3802cb85d01b0b5ba33a5915eb8"
+				src="https://cdn-icons.flaticon.com/png/512/3009/premium/3009114.png?token=exp=1651544579~hmac=a8ee1428189a1b86093dac742d5902fd"
 				alt="enoshima profile" />
 			<h2
 				class="mt-4 text-xl dark:text-gray-300 font-extrabold capitalize">
