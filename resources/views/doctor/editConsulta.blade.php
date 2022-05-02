@@ -1,0 +1,27 @@
+@extends('layouts.template')
+
+@section('content')
+<!-- component -->
+<div class="h-screen bg-gradient-to-b opacity-85 from-green-500 to-green-400 flex justify-center items-center w-full">
+  <form method="POST" action="{{ route('consulta.update',[$consulta->id_con])}}">
+  @csrf
+  @method('PUT')
+    <div class="bg-white px-10 py-8 rounded-xl w-screen shadow-md max-w-sm">
+      <div class="card-body">
+        <h1 class="text-center text-2xl font-semibold text-gray-600">Cambiar Estado</h1>
+        <label for="email" class="block mb-1 text-gray-600 font-semibold">Estado</label>
+                            <select name="select">
+                                <option value="">Cambie el estado</option>
+                                    <option value="Atendido">"Atendido"</option>
+                              </select>
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                                <span class="fas fa-clinic-medical"></span>
+                            </div>
+                        </div>
+      </div>
+      <button type="submit" class="mt-4 w-full flex justify-center bg-green-400  hover:bg-green-500 text-gray-100 p-3  rounded-full tracking-wide font-semibold  shadow-lg cursor-pointer transition ease-in duration-500">Guardar</button>
+    </div>
+  </form>
+</div>
+@endsection
